@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment | TravelEaZ</title>
+
+    <link rel="stylesheet" href="css/payment.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="/" class="logo">
+                <h1>TravelEaZ</h1>
+            </a>
+
+            <a href="/passenger" id="backBtn">← Back</a>
+
+        </nav>
+
+    </header>
+
+    <section class="payment-container">
+
+        <!-- Booking Summary -->
+
+        <div class="summary">
+
+            <h2>Booking Summary</h2>
+
+            <p>
+                <strong>Passenger :</strong>
+                <span id="summaryPassenger">-</span>
+            </p>
+
+            <p>
+                <strong>Vehicle :</strong>
+                <span id="summaryVehicle">-</span>
+            </p>
+
+            <p id="coachRow">
+
+                <strong>Coach :</strong>
+
+                <span id="summaryCoach">B1</span>
+
+            </p>
+
+            <p>
+                <strong>Route :</strong>
+                <span id="summaryRoute">-</span>
+            </p>
+
+            <p>
+                <strong>Seat :</strong>
+                <span id="summarySeat">-</span>
+            </p>
+
+            <p>
+                <strong>Date :</strong>
+                <span id="summaryDate">-</span>
+            </p>
+
+            <hr>
+
+            <h3>
+
+                Total Fare :
+                <span id="summaryFare">₹0</span>
+
+            </h3>
+
+        </div>
+
+        <!-- Payment -->
+
+        <div class="payment-box">
+
+            <h1>Select Payment Method</h1>
+
+            <form id="paymentForm">
+
+                <div class="method">
+
+                    <input type="radio" name="payment" value="UPI">
+
+                    <label>UPI</label>
+
+                </div>
+
+                <div class="method">
+
+                    <input type="radio" name="payment" value="Credit Card">
+
+                    <label>Credit Card</label>
+
+                </div>
+
+                <div class="method">
+
+                    <input type="radio" name="payment" value="Debit Card">
+
+                    <label>Debit Card</label>
+
+                </div>
+
+                <div class="method">
+
+                    <input type="radio" name="payment" value="Net Banking">
+
+                    <label>Net Banking</label>
+
+                </div>
+
+                <div class="method">
+
+                    <input type="radio" name="payment" value="Cash on Boarding">
+
+                    <label>Cash on Boarding</label>
+
+                </div>
+
+                <button type="submit" class="pay-btn">
+
+                    Pay Now
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="js/payment.js"></script>
+
+</body>
+
+</html>

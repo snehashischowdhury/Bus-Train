@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    color:#333;
+}
+
+
+header{
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.logo{
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+.navbar{
+
+    width:90%;
+    margin:auto;
+
+    padding:20px 0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.navbar h2{
+
+    color:#0066ff;
+
+}
+
+.navbar a{
+
+    text-decoration:none;
+
+    color:#0066ff;
+
+    font-weight:500;
+
+}
+
+.navbar a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+.ticket-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:50px 20px;
+
+}
+
+.ticket-card{
+
+    width:700px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    padding:40px;
+
+}
+
+.success{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+.success h1{
+
+    color:#2ecc71;
+
+    margin-bottom:10px;
+
+}
+
+.success p{
+
+    color:#666;
+
+}
+
+hr{
+
+    margin:30px 0;
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+}
+
+
+.details h2{
+
+    color:#0066ff;
+
+    margin-bottom:20px;
+
+}
+
+.details p{
+
+    margin:15px 0;
+
+    font-size:16px;
+
+}
+
+
+.buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+.buttons button{
+
+    padding:14px 28px;
+
+    background:#0066ff;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.buttons button:hover{
+
+    background:#0052cc;
+
+}
+
+
+@media(max-width:768px){
+
+    .ticket-card{
+
+        width:100%;
+
+    }
+
+    .buttons{
+
+        flex-direction:column;
+
+    }
+
+    .buttons a{
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+}
+
+@media print{
+
+    body{
+
+        background:white;
+
+    }
+
+    header{
+
+        display:none;
+
+    }
+
+    .buttons{
+
+        display:none;
+
+    }
+
+    .ticket-container{
+
+        padding:0;
+
+    }
+
+    .ticket-card{
+
+        width:100%;
+
+        box-shadow:none;
+
+        border:none;
+
+    }
+
+}

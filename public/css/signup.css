@@ -1,0 +1,247 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("../images/signup-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+}
+
+.logo{
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 0;
+
+}
+
+.signup-box{
+
+    width:430px;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(8px);
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+.signup-box h1{
+
+    text-align:center;
+
+    color:#0066ff;
+
+    margin-bottom:10px;
+
+}
+
+.signup-box h2{
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.signup-box p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:25px;
+
+}
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:18px;
+
+}
+
+.input-group label{
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.input-group input{
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus{
+
+    border-color:#0066ff;
+
+    box-shadow:0 0 5px rgba(0,102,255,.3);
+
+}
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#0066ff;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    margin-top:10px;
+
+}
+
+button:hover{
+
+    background:#0052cc;
+
+}
+
+.login{
+
+    margin-top:25px;
+
+}
+
+.login a{
+
+    text-decoration:none;
+
+    color:#0066ff;
+
+    font-weight:600;
+
+}
+
+.home-link{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    text-decoration:none;
+
+    color:#555;
+
+}
+
+.home-link:hover{
+
+    color:#0066ff;
+
+}
+
+
+
+.password-box{
+
+    position:relative;
+
+}
+
+.password-box input{
+
+    width:100%;
+
+    padding-right:45px;
+
+}
+
+#togglePassword,
+#toggleConfirmPassword{
+
+    position:absolute;
+
+    right:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    user-select:none;
+
+    font-size:18px;
+
+}
+
+#passwordStrength{
+
+    display:block;
+
+    margin-top:8px;
+
+    font-size:14px;
+
+    font-weight:bold;
+
+}

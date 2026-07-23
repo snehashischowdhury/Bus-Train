@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Seats | TravelEaZ</title>
+
+    <link rel="stylesheet" href="css/booking.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="/" class="logo">
+                <h1>TravelEaZ</h1>
+            </a>
+
+            <a href="/search" class="back-btn">
+                ← Back to Search Results
+            </a>
+
+        </nav>
+
+    </header>
+
+    <section class="seat-selection">
+
+        <!-- Journey Info -->
+
+        <div class="journey-info">
+
+            <h1>Select Your Seat</h1>
+
+            <h3 id="trainName">Rajdhani Express</h3>
+
+            <p id="route">Kolkata → Delhi</p>
+
+            <p id="coachName">Coach : B1</p>
+
+            <p id="journeyDate">12 August 2026</p>
+
+        </div>
+
+
+        <div class="train-wrapper">
+
+            <div class="train-container">
+
+                <div class="train-coach">
+
+                    <div class="left-side">
+
+                        <div class="train-seat available" data-seat="1">1</div>
+                        <div class="train-seat available" data-seat="2">2</div>
+                        <div class="train-seat available" data-seat="3">3</div>
+
+                        <div class="train-seat available" data-seat="4">4</div>
+                        <div class="train-seat booked" data-seat="5">5</div>
+                        <div class="train-seat available" data-seat="6">6</div>
+
+                        <div class="train-seat available" data-seat="9">9</div>
+                        <div class="train-seat available" data-seat="10">10</div>
+                        <div class="train-seat selected" data-seat="11">11</div>
+
+                        <div class="train-seat available" data-seat="12">12</div>
+                        <div class="train-seat available" data-seat="13">13</div>
+                        <div class="train-seat booked" data-seat="14">14</div>
+
+                        <div class="train-seat available" data-seat="17">17</div>
+                        <div class="train-seat available" data-seat="18">18</div>
+                        <div class="train-seat available" data-seat="19">19</div>
+
+                        <div class="train-seat booked" data-seat="20">20</div>
+                        <div class="train-seat available" data-seat="21">21</div>
+                        <div class="train-seat available" data-seat="22">22</div>
+
+                    </div>
+
+                    <div class="right-side">
+
+                        <div class="train-seat available" data-seat="8">8</div>
+                        <div class="train-seat available" data-seat="7">7</div>
+
+                        <div class="train-seat available" data-seat="16">16</div>
+                        <div class="train-seat booked" data-seat="15">15</div>
+
+                        <div class="train-seat available" data-seat="24">24</div>
+                        <div class="train-seat available" data-seat="23">23</div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="legend">
+
+            <div class="legend-item">
+
+                <div class="seat available"></div>
+
+                <span>Available</span>
+
+            </div>
+
+            <div class="legend-item">
+
+                <div class="seat booked"></div>
+
+                <span>Booked</span>
+
+            </div>
+
+            <div class="legend-item">
+
+                <div class="seat selected"></div>
+
+                <span>Selected</span>
+
+            </div>
+
+        </div>
+
+        <div class="summary">
+
+            <h2>Booking Summary</h2>
+
+            <p>
+                <strong>Train :</strong>
+                <span id="summaryTrain">Rajdhani Express</span>
+            </p>
+
+            <p>
+                <strong>Coach :</strong>
+                <span id="summaryCoach">B1</span>
+            </p>
+
+            <p>
+                <strong>Seat :</strong>
+                <span id="summarySeat">11</span>
+            </p>
+
+            <p>
+                <strong>Fare :</strong>
+                <span id="summaryFare">₹1450</span>
+            </p>
+
+            <a href="/passenger" class="continue-btn" id="continueBtn">
+                Continue
+            </a>
+
+        </div>
+
+    </section>
+
+    <script src="js/train-booking.js"></script>
+
+</body>
+
+</html>

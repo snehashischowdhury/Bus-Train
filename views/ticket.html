@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Confirmation | TravelEaZ</title>
+
+    <link rel="stylesheet" href="css/ticket.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="/" class="logo">
+                <h1>TravelEaZ</h1>
+            </a>
+
+            <a href="/" id="homeBtn">Home</a>
+
+        </nav>
+
+    </header>
+
+    <section class="ticket-container">
+
+        <div class="ticket-card">
+
+            <div class="success">
+
+                <h1>🎉 Booking Successful!</h1>
+
+                <p>Your ticket has been confirmed.</p>
+
+            </div>
+
+            <hr>
+
+            <div class="details">
+
+                <h2>Ticket Details</h2>
+
+                <p>
+                    <strong>Passenger :</strong>
+                    <span id="ticketPassenger"></span>
+                </p>
+
+                <p>
+                    <strong>Booking ID :</strong>
+                    <span id="ticketBookingID"></span>
+                </p>
+
+                <p>
+                    <strong>Vehicle :</strong>
+                    <span id="ticketVehicle"></span>
+                </p>
+
+                <p id="coachRow">
+                    <strong>Coach :</strong>
+                    <span id="ticketCoach"></span>
+                </p>
+
+                <p>
+                    <strong>Route :</strong>
+                    <span id="ticketRoute"></span>
+                </p>
+
+                <p>
+                    <strong>Date :</strong>
+                    <span id="ticketDate"></span>
+                </p>
+
+                <p>
+                    <strong>Seat :</strong>
+                    <span id="ticketSeat"></span>
+                </p>
+
+                <p>
+                    <strong>Fare :</strong>
+                    <span id="ticketFare"></span>
+                </p>
+
+                <p>
+                    <strong>Payment :</strong>
+                    <span id="ticketPayment"></span>
+                </p>
+
+                <p style="color:green;font-weight:bold;">
+                    Status : Confirmed ✅
+                </p>
+
+            </div>
+
+            <hr>
+
+            <div class="buttons">
+
+                <button id="printBtn">
+                    Print Ticket
+                </button>
+
+                <button id="downloadBtn">
+                    Download Ticket
+                </button>
+
+                <button id="homeButton">
+                    Back to Home
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+
+    <script src="js/ticket.js"></script>
+
+</body>
+
+</html>

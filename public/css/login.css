@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+.logo{
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background-image: url("../images/loginbg.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.login-box{
+
+    width:400px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+
+}
+
+.login-box h1{
+
+    text-align:center;
+
+    color:#0066ff;
+
+    margin-bottom:10px;
+
+}
+
+.login-box h2{
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.login-box p{
+
+    text-align:center;
+
+    color:#666;
+
+    margin-bottom:30px;
+
+}
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:20px;
+
+}
+
+.input-group label{
+
+    margin-bottom:8px;
+
+    font-weight:500;
+
+}
+
+.input-group input{
+
+    padding:12px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    outline:none;
+
+}
+
+.input-group input:focus{
+
+    border-color:#0066ff;
+
+}
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+    font-size:14px;
+
+}
+
+.options a{
+
+    text-decoration:none;
+
+    color:#0066ff;
+
+}
+
+button{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    background:#0066ff;
+
+    color:white;
+
+    font-size:16px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+button:hover{
+
+    background:#0052cc;
+
+}
+
+.signup{
+
+    margin-top:25px;
+
+}
+
+.signup a{
+
+    color:#0066ff;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+.home-link{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:20px;
+
+    text-decoration:none;
+
+    color:#555;
+
+}
+
+.home-link:hover{
+
+    color:#0066ff;
+
+}
+
+.password-box{
+
+    position:relative;
+
+}
+
+.password-box input{
+
+    width:100%;
+    padding-right:45px;
+
+}
+
+#togglePassword,
+#toggleConfirmPassword{
+
+    position:absolute;
+
+    right:15px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+    user-select:none;
+    font-size:18px;
+
+}
